@@ -20,15 +20,15 @@ class LoginActivity : AppCompatActivity() {
 
         btnOk.setOnClickListener {
             if (TextUtils.isEmpty(edtUsuario.editableText.toString())) {
-                Toast.makeText(this, "Campo Usuário é obrigatório!", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Campo Usuário é obrigatório!", Toast.LENGTH_LONG).show()
                 edtUsuario.setError("Campo Usuário é obrigatório!")
                 if (TextUtils.isEmpty(edtSenha.editableText.toString())) {
-                    Toast.makeText(this, "Campo Senha é obrigatório!", Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Campo Senha é obrigatório!", Toast.LENGTH_LONG).show()
                     edtSenha.setError("Campo Senha é obrigatório!")
                 }
             } else {
                 if (TextUtils.isEmpty(edtSenha.editableText.toString())) {
-                    Toast.makeText(this, "Campo Senha é obrigatório!", Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Campo Senha é obrigatório!", Toast.LENGTH_LONG).show()
                     edtSenha.setError("Campo Senha é obrigatório!")
                 } else {
                     val sendIntent = Intent(this, MainActivity::class.java)

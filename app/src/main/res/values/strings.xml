@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ESG Application</string>
+    <string name="escolha_categoria">Escolha uma categoria e compartilhe sua foto, vídeo ou comprovante</string>
 </resources>

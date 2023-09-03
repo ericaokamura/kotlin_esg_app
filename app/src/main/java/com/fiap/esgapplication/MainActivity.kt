@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val usuario = intent.getStringExtra("usuario")
 
         val txtUsuario = findViewById<TextView>(R.id.textView4)
-        txtUsuario.text = "Olá " + usuario + "!"
+        txtUsuario.text = "Seja bem-vindo(a) " + usuario + "!"
 
 
     }
